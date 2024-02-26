@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>LabExam</title>
+   <style>
+      body {
+         background-color: #f2f2f2;
+         width: 100vw;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+
+      }
+
+      .container {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+         gap: 0px 0px;
+         grid-template-areas:
+            "h1 h1 h1"
+            "inputType1 . inputType2"
+            ". . ."
+            "inputType3 . inputType4"
+            ". . ."
+            "button1 button1 button1";
+         width: 50%;
+         height: 50%;
+         padding: 20px;
+         background-color: white;
+         border-radius: 10px;
+         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+         margin: 0 auto;
+      }
+
+      h1 {
+         grid-column: 1/4;
+         grid-row: 1/2;
+         text-align: center;
+         font-size: 30px;
+         color: #4CAF50;
+
+      }
+
+
+
+
+      input[type="text"],
+      [type="password"],
+      [type="email"] {
+         width: 100%;
+         padding: 12px 20px;
+         margin: 8px 0;
+         display: inline-block;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         box-sizing: border-box;
+      }
+
+      button {
+         width: 100%;
+         background-color: #4CAF50;
+         color: white;
+         padding: 14px 20px;
+         margin: 8px 0;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+      }
+
+      .inputType1 {
+         grid-area: inputType1;
+      }
+
+      .inputType2 {
+         grid-area: inputType2;
+      }
+
+      .inputType3 {
+         grid-area: inputType3;
+      }
+
+      .inputType4 {
+         grid-area: inputType4;
+      }
+
+      .button1 {
+         grid-area: button1;
+      }
+
+      button1.hover {
+         background-color: #45a049;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="container">
+      <h1>Create an account</h1>
+      <div class="inputType1">
+         <label for="FirstName">FirstName</label><br>
+         <input type="text" placeholder="FirstName" id="FirstName"><br>
+      </div>
+      <div class="inputType2">
+         <label for="LastName">LastName</label><br>
+         <input type="text" placeholder="LastName" id="LastName"><br>
+      </div>
+      <div class="inputType3">
+         <label for="Email">Email</label><br>
+         <input type="email" placeholder="email" id="Email"><br>
+      </div>
+      <div class="inputType4">
+         <label for="Password">Password</label><br>
+         <input type="password" placeholder="Password" id="Password"><br>
+      </div>
+      <div class="button1">
+         <button>Sign Up</button>
+      </div>
+   </div>
+</body>
+
+</html>

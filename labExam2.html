@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LabFinal</title>
+
+    <style>
+
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 600px;
+            background-color: #00ffff;
+            display: grid;
+            grid-template-rows: 50px 50px 50px 50px 50px;
+            border: 5px solid black;
+        }
+
+        .h1 {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid black;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        .user,
+        .Pass {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            border-bottom: 2px solid black;
+            padding: 10px;
+        }
+
+        .check {
+            border-bottom: 2px solid black;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .bottom {
+            background-color: #0000ff;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        
+        .b {
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="h1">
+            <h1>Sign in</h1>
+        </div>
+        <div class="user">
+            <label for="UserName">UserName</label>
+            <input type="text" name="" id="UserName">
+        </div>
+        <div class="Pass">
+            <label for="Password">Password</label>
+            <input type="password" name="" id="Password">
+        </div>
+        <div class="check">
+            <input type="checkbox" name="" id="check">
+            <label for="check">Remember Me</label>
+        </div>
+        <div class="bottom">
+            <button class="b">Sign in</button>
+            <button class="b">Discard</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
