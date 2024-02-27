@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LabExam</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 90px;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "Blackc Redc"
+                "Whitec Yellowc";
+            gap: 10px;
+        }
+        .container div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        .blackc {
+            grid-area: Blackc;
+            background-color: black;
+        }
+
+        .redc {
+            grid-area: Redc;
+            background-color: red;
+        }
+
+        .Whitec {
+            grid-area: Whitec;
+            background-color: white;
+        }
+
+        .Yellowc {
+            grid-area: Yellowc;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Colors</h1>
+    <div class="container">
+        <div class="blackc">Black</div>
+        <div class="redc">Red</div>
+        <div class="Whitec">White</div>
+        <div class="Yellowc">Yellow</div>
+    </div>
+
+</body>
+
+</html>

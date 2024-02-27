@@ -12,23 +12,23 @@ body {
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            padding: 0;
         }
-
         .container {
-            width: 600px;
+            width: 80%;
+            height: 30%;
             background-color: #00ffff;
             display: grid;
-            grid-template-rows: 50px 50px 50px 50px 50px;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
             border: 5px solid black;
+            
         }
-
-        .h1 {
+        
+        h1 {
             justify-content: center;
             display: flex;
             align-items: center;
             border-bottom: 2px solid black;
+            margin: 0;
         }
 
         label {
@@ -68,9 +68,9 @@ body {
 <body>
 
     <div class="container">
-        <div class="h1">
+    
             <h1>Sign in</h1>
-        </div>
+        
         <div class="user">
             <label for="UserName">UserName</label>
             <input type="text" name="" id="UserName">

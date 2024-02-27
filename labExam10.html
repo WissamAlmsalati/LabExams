@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LabExam</title>
-    <style>
-        body{
-            background-color: aqua;
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-        }
-        h1,h2,p{
-            text-align: center;
-        }
-        .container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-   
-    </style>
+   <style>
+         .container{
+              width: 50%;
+              margin: 0 auto;
+              text-align: center;
+         }
+         .checks{
+              text-align: center;
+         }
+         p{
+            margin: 0;
+         }
+
+   </style>
 </head>
 <body>
     <div class="container">
@@ -32,19 +29,20 @@
     <input type="email" id="email"><br>
     <label for="date">Birthday</label>
     <input type="date" id="date"><br><br>
-<div class="check">
-    <p>Wich fruit do you prefer</p>
-    <input type="checkbox" id="apple"  value="apple">
+<div class="checks">
+    <p>Wich fruit do you prefer?</p>
+    <input type="checkbox" id="apple" name="apple">
     <label for="apple">Apple</label><br>
-    <input type="checkbox" id="banana"  value="banana">
+    <input type="checkbox" id="banana" name="banana">
     <label for="banana">Banana</label><br>
-    <input type="checkbox" id="orange"  value="orange">
+    <input type="checkbox" id="orange" name="orange">
     <label for="orange">Orange</label><br>
-    <input type="checkbox" id="other" value="other">
+    <input type="checkbox" id="other" name="other">
     <label for="other">Other</label><br>
-    <input type="submit">
-    <input type="submit" value="Clear Form">
 </div>
+<br><br>
+    <button onclick="submit()">Submit</button>
+<button onclick="reset()">Clear Forms</button>
     </div>
 </body>
 </html>
